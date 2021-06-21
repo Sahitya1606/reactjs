@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Form Elemnts</title>
+    </head>
+    <body bgcolor="pink">
+        <h1 align="center" style="color:navy;">Registration Form</h1>
+        <form name="Registration" onsubmit="validateForm();">
+            <table align="center" cellpadding = "10">
+                <!--FIRST NAME-->
+                <tr>
+                    <td>FIRST NAME</td>
+                    <td><input type="text" name="fname" id="fname" size="50" placeholder="Enter your First Name here..." required>
+                        <label id="lb_fname"></label>
+                    </td>
+                </tr>
+
+                <!--Last Name-->
+                <tr>
+                    <td>FIRST NAME</td>
+                    <td><input type="text" name="lname" id="lname" size="50" placeholder="Enter your Last Name here..." required>
+                        <label id="lb_lname"></label>
+                    </td>
+                </tr>
+
+                <!--Usename-->
+                <tr>
+                    <td>Usename</td>
+                    <td><input type="text" name="uname" id="unmae" size="50" placeholder="Enter yout Usename here..." required>
+                    <label id="lb_uname"></label> 
+                    </td>
+                </tr>
+                
+                <!--Password-->
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pwd" id="pwd" size="50" placeholder="Enter your Password here..." required>
+                    <label id="lb_pwd"></label>
+                    </td>
+                </tr>
+
+                <!--Date Of Birth-->
+                <tr>
+                    <td>Dte Of Birth</td>
+                    <td><input type="date" name="dob" id ="dob"placeholder="Enter your Date of Birth" required>
+                    <label id="lb_dob"></label>
+                    </td>
+                </tr>
+
+                <!--GMAIL-->
+                <tr>
+                    <td>Email id</td>
+                    <td>
+                        <input type="email" name="gmail" id="gmail" size="50" placeholder="Enter your gmail id (@gmail.com)" required>
+                        <label "lb_email"></label>
+                    </td>                                  
+                </tr>
+
+                <!--MOBILE NUMBER-->
+                <tr>
+                    <td>Mobile Number</td>
+                    <td>+91
+                        <input type="text" name="mob" id="mob" size="10" placeholder="Enter your Moblie Number" required>(10 digits)
+                        <label id ="lb_mob"></label>
+                    </td>
+                </tr>
+
+                <!--Languages known-->
+                <tr>
+                    <td>Language Known</td>
+                    <td><input type="checkbox" name="English" value="English">
+                        <label id="english">English</label>
+                        <input type="checkbox" name="Hindi" value="Hindi">
+                        <label id="hindi">Hindi</label>
+                    </td>
+                </tr>
+
+                <!--Gender-->
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <!--<label for ="male"> Male</label>-->
+                        Male <input type="radio" name="gender" value="male" >
+                        <label for ="female"> Female</label>
+                        <input type="radio" name="gender" value="female" >
+                    </td>
+                </tr>
+
+                <!--Address-->
+                <tr>
+                    <td>Address <br /><br /><br /></td>
+                    <td><textarea name="address" id="address" rows="4" cols="50" placeholder="Enter your Address here..." onfocus="xfocus('gender,'lb_gender','Select any one option)"; onblur="xblur(this)"></textarea>                     
+                    <label id="lb_address"></label>
+                    </td>
+                </tr>
+
+                <!--City-->
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" id="city" name="city" size="50" placeholder="Enter your City here..." onfocus="xfocus('address','lb_address','enter your address')";onblur="xblur(this)" >
+                    <label id="lb_city"></label>
+                    </td>
+                </tr>
+
+                <!--Pincode-->
+                <tr>
+                    <td>Pin Code</td>
+                    <td><input type="text" name="code" id="code" size="50" placeholder="Enter your Pincode here..." onfocus ="xfocus('city','lb_city','enter your city')" onblur="xblur(this)" required>
+                    <label "lb_code"></label>
+                    </td>
+                </tr>
+                
+                <!--State-->
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" name="state" id="state" placeholder="Enter your State here..." required
+                    <label id="lb_state"></label>
+                    </td>
+                </tr>
+
+                <!--Country-->
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" name="Country" value="India" readonly="readonly" placeholder="Enter your Country here...">                    
+                    </td>
+                </tr>
+
+                <!--Role-->
+                <tr>
+                    <td>Role</td>
+                    <td><select name="role" id="role">
+                    <option></option>
+                    <option>Student</option>
+                    <option>Admin</option>
+                    <label id="lb_role"></label>
+                    </td>
+                </tr>
+            
+            <!--Submit and reset-->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" id="submit">
+                    <input type="reset" name="reset" id="reset">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
